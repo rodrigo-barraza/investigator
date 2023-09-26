@@ -1,0 +1,195 @@
+{
+    "settings": [
+        {
+            "text_prompts": {
+                "0": [
+                    "an intricate composition of a star galaxy sky and complex fractal background scenery filled with an array of shattered mirrors and prisms, vivid colors, dramatic lighting volumetric lighting cinematic lighting soft lighting, 4k photorealistic, 3D render, polarized filter, trending on artstation, trending on cgsociety:3",
+                    "2D, blur, jpeg artifacts, depth of field, signature, saturated:-1"
+                ]
+            },
+            "batch_name": "Shattered",
+            "set_seed": "5555",
+            "steps": 250,
+            "width_height_for_512x512_models": [512, 512],
+            "clip_guidance_scale": 50000,
+            "tv_scale": 100000,
+            "range_scale": 1500000,
+            "sat_scale": 500000,
+            "cutn_batches": 8,
+            "skip_augs": false,
+            "perlin_init": false,
+            "perlin_mode": "mixed",
+            "eta": 1,
+            "clamp_grad": true,
+            "clamp_max": 0.4,
+            "display_rate": 20,
+            "n_batches": 3,
+            "batch_size": 1,
+            "resume_run": false,
+            "run_to_resume": "latest",
+            "resume_from_frame": "latest",
+            "retain_overwritten_frames": false,
+            "diffusion_model": "512x512_diffusion_uncond_finetune_008100",
+            "diffusion_sampling_mode": "ddim",
+            "width_height_for_256x256_models": [512, 448],
+            "use_checkpoint": true,
+            "ViTB32": false,
+            "ViTB16": false,
+            "ViTL14": true,
+            "ViTL14_336px": false,
+            "RN101": false,
+            "RN50": false,
+            "RN50x4": true,
+            "RN50x16": false,
+            "RN50x64": false,
+            "ViTB32_laion2b_e16": true,
+            "ViTB32_laion400m_e31": false,
+            "ViTB32_laion400m_32": false,
+            "ViTB32quickgelu_laion400m_e31": false,
+            "ViTB32quickgelu_laion400m_e32": false,
+            "ViTB16_laion400m_e31": false,
+            "ViTB16_laion400m_e32": false,
+            "RN50_yffcc15m": false,
+            "RN50_cc12m": false,
+            "RN50_quickgelu_yfcc15m": false,
+            "RN50_quickgelu_cc12m": false,
+            "RN101_yfcc15m": false,
+            "RN101_quickgelu_yfcc15m": false,
+            "cut_overview": "[20]*200+[18]*200+[12]*200+[6]*200+[0]*200",
+            "cut_innercut": "[4]*200+[6]*200+[12]*200+[18]*200+[24]*200",
+            "cut_ic_pow": "[6]*100+[2]*200+[4]*100+[6]*200+[10]*200+[15]*150+[20]*50",
+            "cut_icgray_p": "[0]*50+[60]*50+[0]*50+[50]*50+[0]*50+[40]*50+[0]*50+[30]*50+[0]*50+[20]*50+[0]*50+[10]*50+[0]*50+[00]*50+[0]*50+[0]*50+[0]*50+[0]*50+[0]*50+[0]*50",
+            "use_vertical_symmetry": false,
+            "use_horizontal_symmetry": false,
+            "transformation_percent": [0.15],
+            "init_image": "None",
+            "init_scale": 1000,
+            "skip_steps": 0,
+            "animation_mode": "None",
+            "video_init_path": "init.mp4",
+            "video_init_steps": 100,
+            "video_init_clip_guidance_scale": 1000,
+            "video_init_tv_scale": 0.1,
+            "video_init_range_scale": 150,
+            "video_init_sat_scale": 300,
+            "video_init_cutn_batches": 4,
+            "video_init_skip_steps": 50,
+            "extract_nth_frame": 2,
+            "persistent_frame_output_in_batch_folder": true,
+            "video_init_seed_continuity": true,
+            "video_init_flow_blend":  0.999,
+            "video_init_flow_warp": true,
+            "video_init_check_consistency": false,
+            "video_init_blend_mode": "optical flow",
+            "force_flow_generation": false,
+            "key_frames": true,
+            "max_frames": 360,
+            "interp_spline": "Linear",
+            "angle": "0:(0)",
+            "zoom": "0: (1)",
+            "translation_x": "0: (0)",
+            "translation_y": "0: (0)",
+            "translation_z": "0: (0)",
+            "rotation_3d_x": "0: (0)",
+            "rotation_3d_y": "0: (0)",
+            "rotation_3d_z": "0: (0)",
+            "midas_depth_model": "dpt_large",
+            "midas_weight": 0.3,
+            "near_plane": 200,
+            "far_plane": 10000,
+            "fov": 40,
+            "padding_mode": "border",
+            "sampling_mode": "bicubic",
+            "turbo_mode": true,
+            "turbo_steps": "2",
+            "turbo_preroll": 10,
+            "frames_scale": 3000,
+            "frames_skip_steps": "70%",
+            "video_init_frames_scale": 1500,
+            "video_init_frames_skip_steps": "70%",
+            "vr_mode": false,
+            "vr_eye_angle": 0.5,
+            "vr_ipd": 5.0,
+            "skip_video_for_run_all": true,
+            "blend":  0.5,
+            "init_frame": 1,
+            "last_frame": "final_frame",
+            "fps": 12,
+            "intermediate_saves": 0,
+            "intermediates_in_subfolder": true,
+            "randomize_class": true,
+            "clip_denoised": false,
+            "fuzzy_prompt": false,
+            "rand_mag": 0.05,
+            "custom_path": "/content/drive/MyDrive/deep_learning/ddpm/ema_0.9999_058000.pt",
+            "custom_model_attention_resolutions": "16",
+            "custom_model_class_cond": false,
+            "custom_model_diffusion_steps": 1000,
+            "custom_model_rescale_timesteps": true,
+            "custom_model_timestep_respacing": "ddim100",
+            "custom_model_image_size": 256,
+            "custom_model_learn_sigma": true,
+            "custom_model_noise_schedule": "linear",
+            "custom_model_num_channels": 128,
+            "custom_model_num_heads": 1,
+            "custom_model_num_res_blocks": 2,
+            "custom_model_use_fp16": true,
+            "custom_model_use_scale_shift_norm": false,
+            "simple_nvidia_smi_display": false,
+            "google_drive": true,
+            "save_models_to_google_drive": true,
+            "useCPU": false,
+            "check_model_SHA": false,
+            "force_download": false,
+            "pad_or_pulp_cut_overview": "[15]*100+[15]*100+[12]*100+[12]*100+[6]*100+[4]*100+[2]*200+[0]*200",
+            "pad_or_pulp_cut_innercut": "[1]*100+[1]*100+[4]*100+[4]*100+[8]*100+[8]*100+[10]*200+[10]*200",
+            "pad_or_pulp_cut_ic_pow": "[12]*300+[12]*100+[12]*50+[12]*50+[10]*100+[10]*100+[10]*300",
+            "pad_or_pulp_cut_icgray_p": "[0.87]*100+[0.78]*50+[0.73]*50+[0.64]*60+[0.56]*40+[0.50]*50+[0.33]*100+[0.19]*150+[0]*400",
+            "watercolor_cut_overview": "[14]*200+[12]*200+[4]*400+[0]*200",
+            "watercolor_cut_innercut": "[2]*200+[4]*200+[12]*400+[12]*200",
+            "watercolor_cut_ic_pow": "[12]*300+[12]*100+[12]*50+[12]*50+[10]*100+[10]*100+[10]*300",
+            "watercolor_cut_icgray_p": "[0.7]*100+[0.6]*100+[0.45]*100+[0.3]*100+[0]*600"
+        },
+        {
+            "text_prompts": {
+                "0": [
+                    "an intricate composition of a Serene rolling hills meadow and complex fractal background scenery filled with an array of shattered mirrors and prisms, vivid colors, dramatic lighting volumetric lighting cinematic lighting soft lighting, 4k photorealistic, 3D render, polarized filter, trending on artstation, trending on cgsociety:3",
+                    "2D, blur, jpeg artifacts, depth of field, signature, saturated:-1"
+                ]
+            }
+        },
+        {
+            "text_prompts": {
+                "0": [
+                    "an intricate composition of a Sparkling crystal cave landscape and complex fractal background scenery filled with an array of shattered mirrors and prisms, vivid colors, dramatic lighting volumetric lighting cinematic lighting soft lighting, 4k photorealistic, 3D render, polarized filter, trending on artstation, trending on cgsociety:3",
+                    "2D, blur, jpeg artifacts, depth of field, signature, saturated:-1"
+                ]
+            }
+        },
+        {
+            "text_prompts": {
+                "0": [
+                    "an intricate composition of a Ancient ruins mysterious landscape and complex fractal background scenery filled with an array of shattered mirrors and prisms, vivid colors, dramatic lighting volumetric lighting cinematic lighting soft lighting, 4k photorealistic, 3D render, polarized filter, trending on artstation, trending on cgsociety:3",
+                    "2D, blur, jpeg artifacts, depth of field, signature, saturated:-1"
+                ]
+            }
+        },
+        {
+            "text_prompts": {
+                "0": [
+                    "an intricate composition of a lsd psychedelic liquify effect and complex fractal background scenery filled with an array of shattered mirrors and prisms, vivid colors, dramatic lighting volumetric lighting cinematic lighting soft lighting, 4k photorealistic, 3D render, polarized filter, trending on artstation, trending on cgsociety:3",
+                    "2D, blur, jpeg artifacts, depth of field, signature, saturated:-1"
+                ]
+            }
+        },
+        {
+            "text_prompts": {
+                "0": [
+                    "an intricate composition of a Glowing meteor shower starry sky and complex fractal background scenery filled with an array of shattered mirrors and prisms, vivid colors, dramatic lighting volumetric lighting cinematic lighting soft lighting, 4k photorealistic, 3D render, polarized filter, trending on artstation, trending on cgsociety:3",
+                    "2D, blur, jpeg artifacts, depth of field, signature, saturated:-1"
+                ]
+            }
+        }
+        
+    ]
+}
